@@ -5,15 +5,27 @@ import { useState } from 'react';
 import LinkItem from '../../components/LinkItem';
 import { Link } from 'react-router-dom';
 
+import api from '../../services/api'
+
 export default function Home() {
   const [link, setLink] = useState('');
   const [showModal, setShowModal] = useState(false);
 
-  function handleShortLink() {
+  async function handleShortLink() {
+    try {
+      const response = await api.post('/shorten', {
+        long_url: link
+      })
 
-    if (link !== '') {
-      setShowModal(true);
+      console.log(response);
+
+    }catch{
+      alert("Erro")
     }
+
+    // if (link !== '') {
+    //   setShowModal(true);
+    // }
   }
 
   return (

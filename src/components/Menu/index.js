@@ -12,7 +12,7 @@ export default function Menu() {
                 <BsInstagram color='#fff' size={24} />
             </a>
             <Link className='menu-item' to="/links">
-                Meus Links
+                My Links
             </Link>
         </div>
     )

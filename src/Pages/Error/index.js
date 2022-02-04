@@ -6,9 +6,9 @@ export default function Error(){
     return(
         <div className='container-error'>
             <img src="notfound.png" alt='Pagina não encontrada'/>
-            <h1>Página não encontrada!</h1>
+            <h1>Page not Found!</h1>
             <Link to="/">
-                Volta para Home
+                Back to Home
             </Link>
         </div>
     )

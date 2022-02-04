@@ -12,7 +12,7 @@ export default function LinkItem ({closeModal, content}) {
         <div className='modal-container'>
 
             <div className='modal-header'>
-                <h2>Link Encurtado</h2>
+                <h2>Shortened Link</h2>
                 <button onClick={closeModal}>
                     <FiX size={28} color='#000'/>
                 </button>
